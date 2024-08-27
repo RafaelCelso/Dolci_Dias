@@ -1,12 +1,12 @@
-
 @font-face {
-  font-family: 'Playwrite+HR';
-  src: url('Fonts/Playwrite_HR/PlaywriteHR-VariableFont_wght.ttf') format('truetype');
+  font-family: "Playwrite+HR";
+  src: url("Fonts/Playwrite_HR/PlaywriteHR-VariableFont_wght.ttf")
+    format("truetype");
 }
 
 body {
   padding-top: 0;
-  background-color: #FCE3E8;
+  background-color: #fce3e8;
 }
 
 p {
@@ -94,7 +94,7 @@ div.pt-5.pb-5 {
   white-space: nowrap; /* adicionado */
   flex-grow: 1; /* adicionado */
   margin: 0; /* adicionado */
-  font-family: 'Playwrite+HR';
+  font-family: "Playwrite+HR";
   font-weight: bolder;
   font-size: 25px;
 }
@@ -122,6 +122,35 @@ h3.section-title {
 
 .nav.nav-pills.d-inline-flex.justify-content-center.text-uppercase.border-inner.p-4.mb-5 {
   background-color: #594a47;
+}
+
+@media (max-width: 430px) {
+  .d-flex.h-100 {
+    flex-direction: column;
+  }
+  .d-flex.h-100 > div.flex-shrink-0 {
+    order: 1;
+  }
+  .d-flex.h-100
+    > div.d-flex.flex-column.justify-content-center.text-start.border-inner.px-4 {
+    order: 2;
+  }
+
+  .d-flex.h-100
+    > div.d-flex.flex-column.justify-content-center.text-start.border-inner.px-4 {
+    order: 2;
+    margin-top: 20px; /* adicione uma margem top de 20px */
+  }
+
+  .d-flex.flex-column.justify-content-center.text-start.border-inner.px-4 {
+    border-radius: 10px; /* adiciona bordas arredondadas */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  #link-rapido-rodape {
+    padding-top: 24px;
+  }
 }
 
 .container-fluid.about.py-5 {
@@ -250,8 +279,8 @@ data {
 }
 
 .bg-contact .btn-primary {
-  background-color: #25D366; /* cor do botão */
-  border-color: #25D366; /* cor da borda do botão */
+  background-color: #25d366; /* cor do botão */
+  border-color: #25d366; /* cor da borda do botão */
   padding: 10px 20px; /* espaçamento do botão */
   font-size: 18px; /* tamanho do texto do botão */
   font-weight: bold; /* negrito */
@@ -259,13 +288,13 @@ data {
 
 .bg-contact .bi-whatsapp {
   font-size: 24px; /* tamanho do ícone */
-  color: #25D366; /* cor do ícone */
+  color: #25d366; /* cor do ícone */
   margin-right: 10px;
 }
 
 .bi-chat-heart-fill::before {
   font-size: 45px; /* ajuste o tamanho do ícone aqui */
-  color: #FCC9D5;
+  color: #fcc9d5;
 }
 
 /* Estilizar o rodapé */
@@ -298,7 +327,7 @@ footer a {
 
 #link-rapido-rodape {
   font-family: Poppins;
-  color: #FCC9D5;
+  color: #fcc9d5;
 }
 
 ul.list-unstyled {
@@ -306,5 +335,5 @@ ul.list-unstyled {
 }
 
 ul.list-unstyled li a:hover {
-  color: #FCC9D5;
+  color: #fcc9d5;
 }
