@@ -183,6 +183,7 @@ img.img-fluid {
   border-radius: 8px 0px 0px 8px;
 }
 
+
 .d-flex.flex-column.justify-content-center.text-start.bg-secondary.border-inner.px-4 {
   border-radius: 0px 8px 8px 0px;
 }
@@ -200,6 +201,18 @@ span {
 h5.text-uppercase {
   color: #594a47;
   font-weight: bold;
+}
+
+#pedido {
+  background-image: url('img/bg-pedido.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 431px) {
+  img.img-fluid.rounded {
+    margin-bottom: 32px;
+  }
 }
 
 
