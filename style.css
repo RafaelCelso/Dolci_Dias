@@ -202,6 +202,16 @@ h5.text-uppercase {
   font-weight: bold;
 }
 
+
+@media (max-width: 430px) {
+  h5.text-uppercase {
+    padding-top: 12px;
+  }
+  span {
+    padding-bottom: 12px;
+  }
+}
+
 .container-fluid.py-5.mb-5 {
   background-color: #594a47;
 }
