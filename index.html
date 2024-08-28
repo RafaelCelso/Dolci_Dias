@@ -15,35 +15,37 @@
 </head>
 
 <body>
-  <!--Início Navbar-->
-  <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
-    <div class="container">
-      <a href="#"><img src="img/Dolci Dias Logo.webp" class="navbar-brand m-0 section-title logo-image rounded"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" area-controls="menu-navegacao" aria-expanded="true" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
-        <ul class="nav nav-pills d-block d-md-flex">
-          <li class="nav-item fw-bold">
-            <a href="#sobre-nos" class="nav-link">
-              <i class="bi bi-house-door me-1"></i>
-              Sobre o nós</a>
-          </li>
-          <li class="nav-item fw-bold">
-            <a href="#cardapio" class="nav-link">
-              <i class="bi bi-card-text me-1"></i>
-              Nosso cardápio</a>
-          </li>
-          <li class="nav-item fw-bold">
-            <a href="#fale-conosco" class="nav-link">
-              <i class="bi bi-chat-left-text me-1"></i>
-              Fale conosco</a>
-          </li>
-        </ul>
-      </nav>
+  <!-- Início Navbar -->
+<header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+  <div class="container">
+    <a href="#" class="navbar-brand m-0 section-title logo-image rounded">
+      <img src="img/Dolci Dias Logo.webp" alt="Dolci Dias Logo" class="img-fluid rounded">
+    </a>
+    <div class="nav-links">
+      <ul class="nav nav-pills d-block d-md-flex">
+        <li class="nav-item fw-bold">
+          <a href="#sobre-nos" class="nav-link">
+            <i class="bi bi-house-door me-1"></i>
+            Sobre o nós
+          </a>
+        </li>
+        <li class="nav-item fw-bold">
+          <a href="#cardapio" class="nav-link">
+            <i class="bi bi-card-text me-1"></i>
+            Nosso cardápio
+          </a>
+        </li>
+        <li class="nav-item fw-bold">
+          <a href="#fale-conosco" class="nav-link">
+            <i class="bi bi-chat-left-text me-1"></i>
+            Fale conosco
+          </a>
+        </li>
+      </ul>
     </div>
-  </header>
-  <!--Fim Navbar-->
+  </div>
+</header>
+<!-- Fim Navbar -->
 
   <!--Início Hero-->
   <video class="hero-video" src="media/Video-Hero.webm" autoplay loop id="sobre-nos"></video>
@@ -505,3 +507,16 @@
 </body>
 
 </html>
+
+<nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+  <ul class="navbar-nav ms-auto mb-md-0">
+    <li class="nav-item fw-bold">
+      <a href="#sobre-nos" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Sobre o nós
+      </a>
+      <ul class="dropdown-menu ms-auto mb-md-0" aria-labelledby="navbarDropdown">
+        <!-- Conteúdo do menu -->
+      </ul>
+    </li>
+  </ul>
+</nav>

@@ -26,6 +26,18 @@ p {
   background-color: #594a47; /* cor de fundo desejada */
 }
 
+@media (max-width: 767px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* add a margin top to separate the links from the logo */
+  }
+  .nav-item {
+    margin-bottom: 10px;
+  }
+}
+
 i {
   color: white;
 }
