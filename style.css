@@ -13,6 +13,24 @@ p {
   font-family: Poppins;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  background-color: #fcc9d5;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: inset;
+  font-weight: bold;
+}
+
+.back-to-top.hidden {
+  display: none;
+}
+
 .sticky-top {
   padding-top: 0;
 }
